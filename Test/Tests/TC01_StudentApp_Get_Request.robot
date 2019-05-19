@@ -6,6 +6,7 @@ Library  JSONSchemaLibrary
 
 *** Test Cases ***
 Get All Student Details
+    [Tags]  This is a smoke Test
     Create Session  student     http://localhost:8085/student
     ${resp}=    get request  student    /list
     should be equal as strings  ${resp.status_code}     200
