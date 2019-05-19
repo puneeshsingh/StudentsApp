@@ -7,6 +7,7 @@ Library  String
 
 *** Test Cases ***
 Create a new Student in Student App
+    [Tags]  Test Post Request
     create session  ses1    http://localhost:8085
     ${list}=    create list  RPA    Testing     Automation
     &{student}=  create dictionary  firstName=Puneesh8  lastName=Singh  email=test8@gmail.com  programme=Automation   courses=${list}
